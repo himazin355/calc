@@ -68,7 +68,7 @@ let s = 0, e = 0;
     answer = r;
   }
   catch (e) {
-    result.innerHTML = "<span>error</span>";
+    result.innerHTML = "<span><strong>error</strong></span>";
   }
 	localStorage.setItem("Result", result.innerHTML);
   localStorage.setItem("Answer", answer);
