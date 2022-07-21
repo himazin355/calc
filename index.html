@@ -1,80 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset=UTF-8">
+  <meta charset='UTF-8"'>
   <link rel="stylesheet" href="calc.css">
-<title>関数電卓</title>
+  <title>関数電卓</title>
 </head>
+
 <body>
-<center>
-  <script src="calc.js" defer="defer"></script>
-<div class="calc black" id="calc">
-    <form onsubmit="return cal()"><input type="text" id="formula"></form>
-    <div class="result" id="result"></div>
-    <table class="hennkan-button">
-      <tr>
-        <td><button type="button" value="HEX" onclick="HEX()">HEX</button></td>
-        <td><button type="button" value="OCT" onclick="OCT()">OCT</button></td>
-        <td><button type="button" value="BIN" onclick="BIN()">BIN</button></td>
-      </tr>
-    </table>
-    <table class="small-button">
-      <tr>
-        <td><button type="button" value="pi" onclick="add(this)">π</button></td>
-        <td><button type="button" value="e" onclick="add(this)"><i>e</i></button></td>
-        <td><button type="button" value="sin(" onclick="add(this)">sin</button></td>
-        <td><button type="button" value="cos(" onclick="add(this)">cos</button></td>
-        <td><button type="button" value="tan(" onclick="add(this)">tan</button></td>
-        <td><button type="button" value="log(" onclick="add(this)">log</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="abs(" onclick="add(this)">abs</button></td>
-        <td><button type="button" value="^" onclick="add(this)">^</button></td>
-        <td><button type="button" value="(" onclick="add(this)">(</button></td>
-        <td><button type="button" value=")" onclick="add(this)">)</button></td>
-        <td><button type="button" value="sqr(" onclick="add(this)">sqr</button></td>
-        <td><button type="button" value="cbr(" onclick="add(this)">cbr</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="deg" onclick="add(this)">deg</button></td>
-        <td><button type="button" value="rad" onclick="add(this)">rad</button></td>
-        <td><button type="button" value="asin(" onclick="add(this)">asin</button></td>
-        <td><button type="button" value="acos(" onclick="add(this)">acos</button></td>
-        <td><button type="button" value="atan(" onclick="add(this)">atan</button></td>
-        <td><button type="button" value="random" onclick="add(this)">rand</button></td>
-      </tr>
-    </table>
-    <table class="big-button">
-      <tr>
-        <td><button type="button" value="7" onclick="add(this)">7</button></td>
-        <td><button type="button" value="8" onclick="add(this)">8</button></td>
-        <td><button type="button" value="9" onclick="add(this)">9</button></td>
-        <td class="del"><button type="button" onclick="del()">DEL</button></td>
-        <td class="del"><button type="button" onclick="ac()">AC</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="4" onclick="add(this)">4</button></td>
-        <td><button type="button" value="5" onclick="add(this)">5</button></td>
-        <td><button type="button" value="6" onclick="add(this)">6</button></td>
-        <td><button type="button" value="*" onclick="add(this)">×</button></td>
-        <td><button type="button" value="/" onclick="add(this)">÷</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="1" onclick="add(this)">1</button></td>
-        <td><button type="button" value="2" onclick="add(this)">2</button></td>
-        <td><button type="button" value="3" onclick="add(this)">3</button></td>
-        <td><button type="button" value="+" onclick="add(this)">+</button></td>
-        <td><button type="button" value="-" onclick="add(this)">-</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="0" onclick="add(this)">0</button></td>
-        <td><button type="button" value="." onclick="add(this)">.</button></td>
-        <td><button type="button" value="%" onclick="add(this)">%</button></td>
-        <td><button type="button" value="ans" onclick="add(this)">ans</button></td>
-        <td><button type="button" onclick="cal()">=</button></td>
-      </tr>
-    </table>
-  </div>
+  <center>
+    <script src="calc.js" defer></script>
+    <div class="calc black" id="calc">
+      <form onsubmit="return cal()">
+        <input type="text" id="formula">
+      </form>
+      <div class="result" id="result">
+      </div>
+      <table class="hennkan-button">
+        <tr>
+          <td>
+            <button type="button" value="HEX" onclick="HEX()">HEX</button>
+          </td>
+          <td>
+            <button type="button" value="OCT" onclick="OCT()">OCT</button>
+          </td>
+          <td>
+            <button type="button" value="BIN" onclick="BIN()">BIN</button>
+          </td>
+        </tr>
+      </table>
+      <table class="small-button">
+        <tr>
+          <td>
+            <button type="button" value="pi" onclick="add(this)">π</button>
+          </td>
+          <td>
+            <button type="button" value="e" onclick="add(this)">
+              <i>e</i>
+            </button>
+          </td>
+          <td>
+            <button type="button" value="sin(" onclick="add(this)">sin</button>
+          </td>
+          <td>
+            <button type="button" value="cos(" onclick="add(this)">cos</button>
+          </td>
+          <td>
+            <button type="button" value="tan(" onclick="add(this)">tan</button>
+          </td>
+          <td>
+            <button type="button" value="log(" onclick="add(this)">log</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" value="abs(" onclick="add(this)">abs</button>
+          </td>
+          <td>
+            <button type="button" value="^" onclick="add(this)">^</button>
+          </td>
+          <td>
+            <button type="button" value="(" onclick="add(this)">(</button>
+          </td>
+          <td>
+            <button type="button" value=")" onclick="add(this)">)</button>
+          </td>
+          <td>
+            <button type="button" value="sqr(" onclick="add(this)">sqr</button>
+          </td>
+          <td>
+            <button type="button" value="cbr(" onclick="add(this)">cbr</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" value="deg" onclick="add(this)">deg</button>
+          </td>
+          <td>
+            <button type="button" value="rad" onclick="add(this)">rad</button>
+          </td>
+          <td>
+            <button type="button" value="asin(" onclick="add(this)">asin</button>
+          </td>
+          <td>
+            <button type="button" value="acos(" onclick="add(this)">acos</button>
+          </td>
+          <td>
+            <button type="button" value="atan(" onclick="add(this)">atan</button>
+          </td>
+          <td>
+            <button type="button" value="random" onclick="add(this)">rand</button>
+          </td>
+        </tr>
+      </table>
+      <table class="big-button">
+        <tr>
+          <td>
+            <button type="button" value="7" onclick="add(this)">7</button>
+          </td>
+          <td>
+            <button type="button" value="8" onclick="add(this)">8</button>
+          </td>
+          <td>
+            <button type="button" value="9" onclick="add(this)">9</button>
+          </td>
+          <td class="del">
+            <button type="button" onclick="del()">DEL</button>
+          </td>
+          <td class="del">
+            <button type="button" onclick="ac()">AC</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" value="4" onclick="add(this)">4</button>
+          </td>
+          <td>
+            <button type="button" value="5" onclick="add(this)">5</button>
+          </td>
+          <td>
+            <button type="button" value="6" onclick="add(this)">6</button>
+          </td>
+          <td>
+            <button type="button" value="*" onclick="add(this)">×</button>
+          </td>
+          <td>
+            <button type="button" value="/" onclick="add(this)">÷</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" value="1" onclick="add(this)">1</button>
+          </td>
+          <td>
+            <button type="button" value="2" onclick="add(this)">2</button>
+          </td>
+          <td>
+            <button type="button" value="3" onclick="add(this)">3</button>
+          </td>
+          <td>
+            <button type="button" value="+" onclick="add(this)">+</button>
+          </td>
+          <td>
+            <button type="button" value="-" onclick="add(this)">-</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" value="0" onclick="add(this)"></button>
+          </td>
+          <td>
+            <button type="button" value="." onclick="add(this)">.</button>
+          </td>
+          <td>
+            <button type="button" value="%" onclick="add(this)">%</button>
+          </td>
+          <td>
+            <button type="button" value="ans" onclick="add(this)">ans</button>
+          </td>
+          <td>
+            <button type="button" onclick="cal()">=</button>
+          </td>
+        </tr>
+      </table>
+    </div>
   </center>
 </body>
+
 </html>
